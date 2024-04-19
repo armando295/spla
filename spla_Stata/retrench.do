@@ -128,12 +128,7 @@ drop if country=="Cuba"
 	note(WIID data)) ///
 	by(country)
 	
-	twoway (scatter v2pepwrses_mean  year, msize(vsmall) sort), ///
-	ytitle("") ylabel(0(2)4) ///
-	xlabel(1980(5)2000)  ///
-	by(, title(ec power dominates) note(Vdem data)) ///
-	by(country)
-	
+
 	twoway (scatter v2catrauni_mean  year, msize(vsmall) sort), ///
 	ytitle("") ylabel(0(1)4) ///
 	xlabel(1980(5)2000)  ///

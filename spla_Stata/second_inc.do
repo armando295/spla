@@ -128,14 +128,14 @@ gen sample1=e(sample)
 gen ytilde = leftturn - _b[informal] - _b[fgt1]
 reg ytilde allsapop region gdppc if sample1==1
 
-
+drop ytilde
+drop sample1
 
 *** Reported standard errors need to be corrected to account for the two stage regression.
 *** The model below bootstraps the se. See Acharya et al. (2016).
 *** note:to drop program <program drop deboot> command
 
-drop ytilde
-drop sample1
+
 
 *** to check whether netturnout effect is significant
 

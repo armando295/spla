@@ -11,6 +11,8 @@
 ** dpolinq is index of the dominance of economic power in politics from Vdem. 0 if wealthy dominate 4 if political power is more or less equally distributed.
 ***** dtu and dpolinq can be used to explore potential mediators.
 
+*** npregress command is available in Stata 15, earlier versions may reuire installation.
+
 * Nonparametric regression of 1930s industrialisation on 1960 insurance fund participation. 
 
 npregress kernel xpart60 dindus30 , vce(bootstrap , reps(100) seed(123))
